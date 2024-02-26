@@ -29,7 +29,7 @@ Route::prefix('category')->group(function(){
 });     
 
 //Route for UserController
-Route::get('/user/{$id}/name/{$name}', [UserController::class, 'user']);
+Route::get('/user/{id}/name/{name}', [UserController::class, 'user']);
 
 //Route for SalesController
 Route::get('/transaction', [SalesController::class, 'transaction']);
