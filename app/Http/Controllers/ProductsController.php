@@ -14,8 +14,8 @@ class ProductsController extends Controller
         return view('category.beauty-health');
     }
 
-    public function homercare() {
-        return view('category.homer-care');
+    public function homecare() {
+        return view('category.home-care');
     }
 
     public function babykid() {
