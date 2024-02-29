@@ -21,7 +21,7 @@ return new class extends Migration
             $table->timestamps();
 
             // Definisi Foreign Key pada kolom kategori_id mengacu pada kolom kategori_id di tabel m_kategori
-            $table->foreign('kategori_id')->references('id')->on('m_kategori');
+            $table->foreign('kategori_id')->references('kategori_id')->on('m_kategori');
         });
     }
 
