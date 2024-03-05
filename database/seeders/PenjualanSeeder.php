@@ -13,23 +13,79 @@ class PenjualanSeeder extends Seeder
      */
     public function run(): void
     {
-        // Ambil daftar user yang telah diisi
-        $users = DB::table('m_user')->pluck('user_id');
+        $penjualan = [
+            [
+                'penjualan_id' => '001', 
+                'user_id' => '001',
+                'pembeli' => 'Ahmad',
+                'penjualan_kode' => '01',
+                'penjualan_tanggal' => now() ,
+            ],
+            [
+                'penjualan_id' => '002', 
+                'user_id' => '002',
+                'pembeli' => 'Rini',
+                'penjualan_kode' => '02',
+                'penjualan_tanggal' => now() ,
+            ],
+            [
+                'penjualan_id' => '003', 
+                'user_id' => '003',
+                'pembeli' => 'Reta',
+                'penjualan_kode' => '03',
+                'penjualan_tanggal' => now() ,
+            ],
+            [
+                'penjualan_id' => '004', 
+                'user_id' => '003',
+                'pembeli' => 'Alanna',
+                'penjualan_kode' => '04',
+                'penjualan_tanggal' => now() ,
+            ],
+            [
+                'penjualan_id' => '005', 
+                'user_id' => '002',
+                'pembeli' => 'Ahmad',
+                'penjualan_kode' => '05',
+                'penjualan_tanggal' => now() ,
+            ],
+            [
+                'penjualan_id' => '006', 
+                'user_id' => '002',
+                'pembeli' => 'Marta',
+                'penjualan_kode' => '06',
+                'penjualan_tanggal' => now() ,
+            ],
+            [
+                'penjualan_id' => '007', 
+                'user_id' => '001',
+                'pembeli' => 'Panca',
+                'penjualan_kode' => '07',
+                'penjualan_tanggal' => now() ,
+            ],
+            [
+                'penjualan_id' => '008', 
+                'user_id' => '003',
+                'pembeli' => 'Denada',
+                'penjualan_kode' => '08',
+                'penjualan_tanggal' => now() ,
+            ],
+            [
+                'penjualan_id' => '009', 
+                'user_id' => '001',
+                'pembeli' => 'Winanda',
+                'penjualan_kode' => '09',
+                'penjualan_tanggal' => now() ,
+            ],
+            [
+                'penjualan_id' => '010', 
+                'user_id' => '001',
+                'pembeli' => 'Rena',
+                'penjualan_kode' => '10',
+                'penjualan_tanggal' => now() ,
+            ],
+        ];
 
-        // Generate data penjualan
-        $penjualans = [];
-        foreach ($users as $user) {
-            for ($i = 0; $i < 10; $i++) { // 10 transaksi penjualan untuk setiap user
-                $penjualans[] = [
-                    'user_id' => $user,
-                    'pembeli' => 'Nama Pembeli ' . ($i + 1),
-                    'penjualan_kode' => 'KodePenjualan' . ($i + 1),
-                    'penjualan_tanggal' => now(),
-                ];
-            }
-        }
-
-        // Masukkan data penjualan ke dalam tabel t_penjualan
-        DB::table('t_penjualan')->insert($penjualans);
+        DB::table('t_penjualan')->insert($penjualan);
     }
 }
