@@ -6,6 +6,7 @@ use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\SalesController;
 use App\Http\Controllers\UserController;
 use App\HTTP\Controllers\LevelController;
+use App\HTTP\Controllers\KategoriController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,3 +41,4 @@ Route::get('/', function() {
 });
 
 Route::get('/level', [LevelController::class, 'index']);
+Route::get('/kategori', [KategoriController::class, 'index']);
