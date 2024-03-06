@@ -18,27 +18,10 @@ use App\HTTP\Controllers\KategoriController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-//Route for HomeController
-// Route::get('/', [HomeController::class, 'index']);
-
-//Routes for ProductsController
-Route::prefix('category')->group(function(){
-    Route::get('/food-beverage', [ProductsController::class, 'foodbeverage']);
-    Route::get('/beauty-health', [ProductsController::class, 'beautyhealth']);
-    Route::get('/home-care', [ProductsController::class, 'homecare']);
-    Route::get('/baby-kid', [ProductsController::class, 'babykid']);
-});     
-
-//Route for UserController
-Route::get('/user/{id}/name/{name}', [UserController::class, 'user']);
-
-//Route for SalesController
-Route::get('/transaction', [SalesController::class, 'transaction']);
-
 Route::get('/', function() {
     return view('welcome');
 });
 
 Route::get('/level', [LevelController::class, 'index']);
 Route::get('/kategori', [KategoriController::class, 'index']);
+Route::get('/user', [UserController::class, 'index']);
