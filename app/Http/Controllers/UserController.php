@@ -31,7 +31,8 @@ class UserController extends Controller
         //     'nama' => 'Pelanggan Pertama',
         // ];
         // UserModel::where('username', 'customer-1')->update($data); //update data user
-
+        
+        // J4 1.1 Langkah 2
         // $data = [
         //     'level_id' => 2,
         //     'username' => 'manager_dua',
@@ -40,15 +41,36 @@ class UserController extends Controller
         // ];
         // UserModel::create($data);
 
-        $data = [
-            'level_id' => 2,
-            'username' => 'manager_tiga',
-            'nama' => 'Manager 3',
-            'password' => Hash::make('12345')
-        ];
-        UserModel::create($data);
+        // J4 1.1 Langkah 4
+        // $data = [
+        //     'level_id' => 2,
+        //     'username' => 'manager_tiga',
+        //     'nama' => 'Manager 3',
+        //     'password' => Hash::make('12345')
+        // ];
+        // UserModel::create($data);
 
-        $user = UserModel::all();
+        // $user = UserModel::all();
+
+        // j4 2.1 Langkah 1
+        // $user = UserModel::find(1);
+
+        // j4 2.1 Langkah 4
+        // $user = UserModel::where('level_id', 1)->first();
+
+        // j4 2.1 Langkah 6
+        // $user = UserModel::firstwhere('level_id', 1)->first();
+
+        // j4 2.1 Langkah 8
+        // $user = UserModel::findOr(1, ['username', 'nama'], function() {
+        //     abort(404);
+        // });
+
+        // j4 2.1 Langkah 10
+        $user = UserModel::findOr(20, ['username', 'nama'], function() {
+            abort(404);
+        });
+
 
         return view('user', ['data' => $user]);
     }
