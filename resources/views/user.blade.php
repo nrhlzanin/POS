@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< Updated upstream
     <title>Data User</title>
 </head>
 <body>
@@ -24,12 +23,5 @@
             </tr>
         @endforeach
     </table>
-=======
-    <title>User</title>
-</head>
-<body>
-    <h1>Halaman User</h1>
-    
->>>>>>> Stashed changes
 </body>
 </html>
