@@ -72,11 +72,18 @@ class UserController extends Controller
         // });
 
         // j4 2.2 Langkah 1
-        $user = UserModel::findOrFail(1);
+        // $user = UserModel::findOrFail(1);
 
         // j4 2.2 Langkah 3
-        $user = UserModel::where('username', 'manager9')->firstOrFail();
+        // $user = UserModel::where('username', 'manager9')->firstOrFail();
 
-        return view('user', ['data' => $user]);
+        // j4 2.3 Langkah 1
+        // $user = UserModel::where('level_id', 2)->count();
+        // dd($user);
+
+        // j4 2.3 Langkah 3
+        $userCount = UserModel::where('level_id', 2)->count();
+
+        return view('user', ['userCount' => $userCount]);
     }
 }
