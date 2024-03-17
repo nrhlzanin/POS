@@ -22,8 +22,23 @@ Route::get('/', function() {
     return view('welcome');
 });
 
+//Level
 Route::get('/level', [LevelController::class, 'index']);
+
+//Kategori
 Route::get('/kategori', [KategoriController::class, 'index']);
+//Create Kategori
+Route::get('/kategori/create', [KategoriController::class, 'create'])->name('/kategori/create');
+Route::post('/kategori', [KategoriController::class, 'store']);
+
+//Edit Kategori
+Route::get('/kategori/update/{id}', [KategoriController::class, 'update'])->name('/kategori/update');
+Route::put('/kategori/update_simpan/{id}', [KategoriController::class, 'update_simpan'])->name('/kategori/update_simpan');
+
+//Delete Kategori
+Route::get('/kategori/delete/{id}', [KategoriController::class, 'delete'])->name('/kategori/delete');
+
+//User
 Route::get('/user', [UserController::class, 'index']);
 
 //Add User
@@ -36,5 +51,3 @@ Route::put('/user/ubah_simpan/{id}', [UserController::class, 'ubah_simpan'])->na
 
 //Delete User
 Route::get('/user/hapus/{id}', [UserController::class, 'hapus'])->name('/user/hapus');
-
-Route::get('/kategori', [KategoriController::class, 'index']);

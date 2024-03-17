@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-{{-- Customixe layout section --}}
+{{-- Customize layout section --}}
 
 @section('subtitle', 'Kategori')
 @section('content_header_title', 'Home')
@@ -17,6 +17,6 @@
     </div>
 @endsection
 
-@push('script')
-    {{ $dataTable->table() }}
+@push('scripts')
+    {{ $dataTable->scripts() }}
 @endpush

@@ -22,7 +22,15 @@ class KategoriDataTable extends DataTable
     public function dataTable(QueryBuilder $query): EloquentDataTable
     {
         return (new EloquentDataTable($query))
-/*             ->addColumn('action', 'kategori.action') */
+            ->addColumn('actions', function ($kategori) {
+                return '<a href="' . route('/kategori/update', ['id' => $kategori->kategori_id]) . '" class="btn btn-primary mr-2">
+                    <i class="fa fa-pencil-alt" style="color: white; font-size: 12px;"></i>
+                    </a>' .
+                    '<a href="' . route('/kategori/delete', ['id' => $kategori->kategori_id]) . '" class="btn btn-danger" onclick="return confirm(\'Are you sure you want to delete?\')">
+                    <i class="fa fa-trash" style="color: white; font-size: 12px;"></i>
+                    </a>';
+            })
+            ->rawColumns(['actions'])
             ->setRowId('id');
     }
 
@@ -44,8 +52,7 @@ class KategoriDataTable extends DataTable
                     ->columns($this->getColumns())
                     ->minifiedAjax()
                     //->dom('Bfrtip')
-                    ->orderBy(1)
-                    ->selectStyleSingle()
+                    ->orderBy(0, 'desc')
                     ->buttons([
                         Button::make('excel'),
                         Button::make('csv'),
@@ -62,16 +69,15 @@ class KategoriDataTable extends DataTable
     public function getColumns(): array
     {
         return [
-    /*         Column::computed('action')
-                  ->exportable(false)
-                  ->printable(false)
-                  ->width(60)
-                  ->addClass('text-center'), */
             Column::make('kategori_id'),
             Column::make('kategori_kode'),
             Column::make('kategori_nama'),
             Column::make('created_at'),
-            Column::make('updated_at'),
+            Column::make('updated_at')
+                ->exportable(false)
+                ->printable(false)
+                ->width(100)
+                ->addClass('text-center'),
         ];
     }
 
