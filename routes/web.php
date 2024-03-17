@@ -36,3 +36,5 @@ Route::put('/user/ubah_simpan/{id}', [UserController::class, 'ubah_simpan'])->na
 
 //Delete User
 Route::get('/user/hapus/{id}', [UserController::class, 'hapus'])->name('/user/hapus');
+
+Route::get('/kategori', [KategoriController::class, 'index']);
