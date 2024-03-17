@@ -1,12 +1,9 @@
 <?php
 
+use App\Http\Controllers\KategoriController;
+use App\Http\Controllers\LevelController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
-use App\HTTP\Controllers\HomeController;
-use App\HTTP\Controllers\ProductsController;
-use App\HTTP\Controllers\SalesController;
-use App\HTTP\Controllers\UserController;
-use App\HTTP\Controllers\LevelController;
-use App\HTTP\Controllers\KategoriController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +15,8 @@ use App\HTTP\Controllers\KategoriController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/', function() {
+
+Route::get('/', function () {
     return view('welcome');
 });
 
@@ -26,7 +24,8 @@ Route::get('/', function() {
 Route::get('/level', [LevelController::class, 'index']);
 
 //Kategori
-Route::get('/kategori', [KategoriController::class, 'index']);
+Route::get('/kategori', [KategoriController::class, 'index'])->name('kategori.index');
+
 //Create Kategori
 Route::get('/kategori/create', [KategoriController::class, 'create'])->name('/kategori/create');
 Route::post('/kategori', [KategoriController::class, 'store']);
@@ -39,7 +38,7 @@ Route::put('/kategori/update_simpan/{id}', [KategoriController::class, 'update_s
 Route::get('/kategori/delete/{id}', [KategoriController::class, 'delete'])->name('/kategori/delete');
 
 //User
-Route::get('/user', [UserController::class, 'index']);
+Route::get('/user', [UserController::class, 'index'])->name('/user');
 
 //Add User
 Route::get('/user/tambah', [UserController::class, 'tambah'])->name('/user/tambah');
