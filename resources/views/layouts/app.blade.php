@@ -61,20 +61,3 @@
         */
     </style>
 @endpush
-
-{{-- Extend and customize the sidebar --}}
-@section('sidebar')
-    <!-- Sidebar Menu -->
-    <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-            <!-- Other sidebar menu items -->
-            <li class="nav-item">
-                <a href="{{ route('kategori.index') }}" class="nav-link">
-                    <i class="nav-icon fas fa-list"></i>
-                    <p>Manage Kategori</p>
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <!-- /.sidebar-menu -->
-@stop
