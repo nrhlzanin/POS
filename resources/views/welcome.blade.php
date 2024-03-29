@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+{{-- JS6 Praktikum A Soal 1 s/d 6 --}}
+
+{{-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -8,18 +10,18 @@
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="{{ asset ('template/plugins/fontawesome-free/css/all.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('template/plugins/fontawesome-free/css/all.min.css') }}">
   <!-- overlayScrollbars -->
-  <link rel="stylesheet" href="{{ asset ('template/plugins/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('template/plugins/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
   <!-- Theme style -->
-  <link rel="stylesheet" href="{{ asset ('template/dist/css/adminlte.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('template/dist/css/adminlte.min.css') }}">
 </head>
 <body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
 <div class="wrapper">
 
   <!-- Preloader -->
   <div class="preloader flex-column justify-content-center align-items-center">
-    <img class="animation__wobble" src="{{ asset ('template/dist/img/AdminLTELogo.png') }}" alt="AdminLTELogo" height="60" width="60">
+    <img class="animation__wobble" src="{{ asset('template/dist/img/AdminLTELogo.png') }}" alt="AdminLTELogo" height="60" width="60">
   </div>
 
   <!-- Navbar -->
@@ -30,7 +32,7 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="{{ asset ('template/index3.html') }}" class="nav-link">Home</a>
+        <a href="index3.html" class="nav-link">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">Contact</a>
@@ -71,7 +73,7 @@
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="{{ asset ('template/dist/img/user1-128x128.jpg') }}" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+              <img src="{{ asset('template/dist/img/user1-128x128.jpg') }}" alt="User Avatar" class="img-size-50 mr-3 img-circle">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   Brad Diesel
@@ -87,7 +89,7 @@
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="{{ asset ('template/dist/img/user8-128x128.jpg') }}" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <img src="{{ asset('template/dist/img/user8-128x128.jpg')}}" alt="User Avatar" class="img-size-50 img-circle mr-3">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   John Pierce
@@ -103,7 +105,7 @@
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="{{ asset ('template/dist/img/user3-128x128.jpg') }}" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <img src="{{ asset('template/dist/img/user3-128x128.jpg')}}" alt="User Avatar" class="img-size-50 img-circle mr-3">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   Nora Silvester
@@ -163,8 +165,8 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="{{ asset ('template/index3.html') }}" class="brand-link">
-      <img src="{{ asset ('template/dist/img/AdminLTELogo.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+    <a href="index3.html" class="brand-link">
+      <img src="{{asset('template/dist/img/AdminLTELogo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">AdminLTE 3</span>
     </a>
 
@@ -173,7 +175,7 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="{{ asset ('template/dist/img/user2-160x160.jpg" class="img-circle elevation-2') }}" alt="User Image">
+          <img src="{{ asset('template/dist/img/user2-160x160.jpg')}}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block">Alexander Pierce</a>
@@ -207,19 +209,19 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{ asset ('template/index.html') }}" class="nav-link">
+                <a href="./index.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Dashboard v1</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/index2.html') }}" class="nav-link active">
+                <a href="./index2.html" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Dashboard v2</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/index3.html') }}" class="nav-link">
+                <a href="./index3.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Dashboard v3</p>
                 </a>
@@ -227,7 +229,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="{{ asset ('template/pages/widgets.html') }}" class="nav-link">
+            <a href="pages/widgets.html" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Widgets
@@ -246,49 +248,49 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/layout/top-nav.html') }}" class="nav-link">
+                <a href="pages/layout/top-nav.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Top Navigation</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/layout/top-nav-sidebar.html') }}" class="nav-link">
+                <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Top Navigation + Sidebar</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/layout/boxed.html') }}" class="nav-link">
+                <a href="pages/layout/boxed.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Boxed</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/layout/fixed-sidebar.html') }}" class="nav-link">
+                <a href="pages/layout/fixed-sidebar.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Fixed Sidebar</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/layout/fixed-sidebar-custom.html') }}" class="nav-link">
+                <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Fixed Sidebar <small>+ Custom Area</small></p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/layout/fixed-topnav.html') }}" class="nav-link">
+                <a href="pages/layout/fixed-topnav.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Fixed Navbar</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/layout/fixed-footer.html') }}" class="nav-link">
+                <a href="pages/layout/fixed-footer.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Fixed Footer</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/layout/collapsed-sidebar.html') }}" class="nav-link">
+                <a href="pages/layout/collapsed-sidebar.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Collapsed Sidebar</p>
                 </a>
@@ -305,25 +307,25 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/charts/chartjs.html') }}" class="nav-link">
+                <a href="pages/charts/chartjs.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>ChartJS</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/charts/flot.html') }}" class="nav-link">
+                <a href="pages/charts/flot.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Flot</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/charts/inline.html') }}" class="nav-link">
+                <a href="pages/charts/inline.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Inline</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/charts/uplot.html') }}" class="nav-link">
+                <a href="pages/charts/uplot.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>uPlot</p>
                 </a>
@@ -340,49 +342,49 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/UI/general.html') }}') }}" class="nav-link">
+                <a href="pages/UI/general.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>General</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/UI/icons.html') }}" class="nav-link">
+                <a href="pages/UI/icons.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Icons</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/UI/buttons.html') }}" class="nav-link">
+                <a href="pages/UI/buttons.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Buttons</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/UI/sliders.html') }}" class="nav-link">
+                <a href="pages/UI/sliders.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Sliders</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/UI/modals.html') }}" class="nav-link">
+                <a href="pages/UI/modals.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Modals & Alerts</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/UI/navbar.html') }}" class="nav-link">
+                <a href="pages/UI/navbar.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Navbar & Tabs</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/UI/timeline.html') }}" class="nav-link">
+                <a href="pages/UI/timeline.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Timeline</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/UI/ribbons.html') }}" class="nav-link">
+                <a href="pages/UI/ribbons.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Ribbons</p>
                 </a>
@@ -399,25 +401,25 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/forms/general.html') }}" class="nav-link">
+                <a href="{{asset('template/pages/forms/general.html')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>General Elements</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/forms/advanced.html') }}" class="nav-link">
+                <a href="{{asset('template/pages/forms/advanced.html')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Advanced Elements</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/forms/editors.html') }}" class="nav-link">
+                <a href="{{asset('template/pages/forms/editors.html')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Editors</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/forms/validation.html') }}" class="nav-link">
+                <a href="{{asset('template/pages/forms/validation.html')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Validation</p>
                 </a>
@@ -434,19 +436,19 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/tables/simple.html') }}" class="nav-link">
+                <a href="pages/tables/simple.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Simple Tables</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/tables/data.html') }}" class="nav-link">
+                <a href="pages/tables/data.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>DataTables</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/tables/jsgrid.html') }}" class="nav-link">
+                <a href="pages/tables/jsgrid.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>jsGrid</p>
                 </a>
@@ -455,7 +457,7 @@
           </li>
           <li class="nav-header">EXAMPLES</li>
           <li class="nav-item">
-            <a href="{{ asset ('template/pages/calendar.html') }}" class="nav-link">
+            <a href="pages/calendar.html" class="nav-link">
               <i class="nav-icon fas fa-calendar-alt"></i>
               <p>
                 Calendar
@@ -464,7 +466,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{ asset ('template/pages/gallery.html') }}" class="nav-link">
+            <a href="pages/gallery.html" class="nav-link">
               <i class="nav-icon far fa-image"></i>
               <p>
                 Gallery
@@ -472,7 +474,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{ asset ('template/pages/kanban.html') }}" class="nav-link">
+            <a href="pages/kanban.html" class="nav-link">
               <i class="nav-icon fas fa-columns"></i>
               <p>
                 Kanban Board
@@ -489,19 +491,19 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/mailbox/mailbox.html') }}" class="nav-link">
+                <a href="pages/mailbox/mailbox.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Inbox</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/mailbox/compose.html') }}" class="nav-link">
+                <a href="pages/mailbox/compose.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Compose</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/mailbox/read-mail.html') }}" class="nav-link">
+                <a href="pages/mailbox/read-mail.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Read</p>
                 </a>
@@ -518,61 +520,61 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/examples/invoice.html') }}" class="nav-link">
+                <a href="pages/examples/invoice.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Invoice</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/examples/profile.html') }}" class="nav-link">
+                <a href="pages/examples/profile.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Profile</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/examples/e-commerce.html') }}" class="nav-link">
+                <a href="pages/examples/e-commerce.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>E-commerce</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/examples/projects.html') }}" class="nav-link">
+                <a href="pages/examples/projects.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Projects</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/examples/project-add.html') }}" class="nav-link">
+                <a href="pages/examples/project-add.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Project Add</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/examples/project-edit.html') }}" class="nav-link">
+                <a href="pages/examples/project-edit.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Project Edit</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/examples/project-detail.html') }}" class="nav-link">
+                <a href="pages/examples/project-detail.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Project Detail</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/examples/contacts.html') }}" class="nav-link">
+                <a href="pages/examples/contacts.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Contacts</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/examples/faq.html') }}" class="nav-link">
+                <a href="pages/examples/faq.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>FAQ</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/examples/contact-us.html') }}" class="nav-link">
+                <a href="pages/examples/contact-us.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Contact us</p>
                 </a>
@@ -598,25 +600,25 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="{{ asset ('template/pages/examples/login.html') }}" class="nav-link">
+                    <a href="pages/examples/login.html" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Login v1</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="{{ asset ('template/pages/examples/register.html') }}" class="nav-link">
+                    <a href="pages/examples/register.html" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Register v1</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="{{ asset ('template/pages/examples/forgot-password.html') }}" class="nav-link">
+                    <a href="pages/examples/forgot-password.html" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Forgot Password v1</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="{{ asset ('template/pages/examples/recover-password.html') }}" class="nav-link">
+                    <a href="pages/examples/recover-password.html" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Recover Password v1</p>
                     </a>
@@ -633,25 +635,25 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="{{ asset ('template/pages/examples/login-v2.html') }}" class="nav-link">
+                    <a href="pages/examples/login-v2.html" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Login v2</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="{{ asset ('template/pages/examples/register-v2.html') }}" class="nav-link">
+                    <a href="pages/examples/register-v2.html" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Register v2</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="{{ asset ('template/pages/examples/forgot-password-v2.html') }}" class="nav-link">
+                    <a href="pages/examples/forgot-password-v2.html" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Forgot Password v2</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="{{ asset ('template/pages/examples/recover-password-v2.html')  }}" class="nav-link">
+                    <a href="pages/examples/recover-password-v2.html" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Recover Password v2</p>
                     </a>
@@ -659,49 +661,49 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/examples/lockscreen.html') }}" class="nav-link">
+                <a href="pages/examples/lockscreen.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Lockscreen</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/examples/legacy-user-menu.html') }}" class="nav-link">
+                <a href="pages/examples/legacy-user-menu.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Legacy User Menu</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/examples/language-menu.html') }}" class="nav-link">
+                <a href="pages/examples/language-menu.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Language Menu</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/examples/404.html') }}" class="nav-link">
+                <a href="pages/examples/404.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Error 404</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/examples/500.html') }}" class="nav-link">
+                <a href="pages/examples/500.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Error 500</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/examples/pace.html') }}" class="nav-link">
+                <a href="pages/examples/pace.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Pace</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/examples/blank.html') }}" class="nav-link">
+                <a href="pages/examples/blank.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Blank Page</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/starter.html') }}" class="nav-link">
+                <a href="starter.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Starter Page</p>
                 </a>
@@ -718,13 +720,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/search/simple.html') }}" class="nav-link">
+                <a href="pages/search/simple.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Simple Search</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ asset ('template/pages/search/enhanced.html') }}" class="nav-link">
+                <a href="pages/search/enhanced.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Enhanced</p>
                 </a>
@@ -733,7 +735,7 @@
           </li>
           <li class="nav-header">MISCELLANEOUS</li>
           <li class="nav-item">
-            <a href="{{ asset ('template/iframe.html') }}" class="nav-link">
+            <a href="iframe.html" class="nav-link">
               <i class="nav-icon fas fa-ellipsis-h"></i>
               <p>Tabbed IFrame Plugin</p>
             </a>
@@ -1141,7 +1143,7 @@
                           <span class="direct-chat-timestamp float-right">23 Jan 2:00 pm</span>
                         </div>
                         <!-- /.direct-chat-infos -->
-                        <img class="direct-chat-img" src="{{ asset ('template/dist/img/user1-128x128.jpg') }}" alt="message user image">
+                        <img class="direct-chat-img" src="{{asset('template/dist/img/user1-128x128.jpg')}}" alt="message user image">
                         <!-- /.direct-chat-img -->
                         <div class="direct-chat-text">
                           Is this template really for free? That's unbelievable!
@@ -1157,7 +1159,7 @@
                           <span class="direct-chat-timestamp float-left">23 Jan 2:05 pm</span>
                         </div>
                         <!-- /.direct-chat-infos -->
-                        <img class="direct-chat-img" src="{{ asset ('template/dist/img/user3-128x128.jpg') }}" alt="message user image">
+                        <img class="direct-chat-img" src="{{asset('template/dist/img/user3-128x128.jpg')}}" alt="message user image">
                         <!-- /.direct-chat-img -->
                         <div class="direct-chat-text">
                           You better believe it!
@@ -1173,7 +1175,7 @@
                           <span class="direct-chat-timestamp float-right">23 Jan 5:37 pm</span>
                         </div>
                         <!-- /.direct-chat-infos -->
-                        <img class="direct-chat-img" src="{{ asset ('template/dist/img/user1-128x128.jpg') }}" alt="message user image">
+                        <img class="direct-chat-img" src="{{asset('template/dist/img/user1-128x128.jpg')}}" alt="message user image">
                         <!-- /.direct-chat-img -->
                         <div class="direct-chat-text">
                           Working with AdminLTE on a great new app! Wanna join?
@@ -1189,7 +1191,7 @@
                           <span class="direct-chat-timestamp float-left">23 Jan 6:10 pm</span>
                         </div>
                         <!-- /.direct-chat-infos -->
-                        <img class="direct-chat-img" src="{{ asset ('template/dist/img/user3-128x128.jpg') }}" alt="message user image">
+                        <img class="direct-chat-img" src="{{asset('template/dist/img/user3-128x128.jpg')}}" alt="message user image">
                         <!-- /.direct-chat-img -->
                         <div class="direct-chat-text">
                           I would love to.
@@ -1206,7 +1208,7 @@
                       <ul class="contacts-list">
                         <li>
                           <a href="#">
-                            <img class="contacts-list-img" src="{{ asset ('template/dist/img/user1-128x128.jpg') }}" alt="User Avatar">
+                            <img class="contacts-list-img" src="{{asset('template/dist/img/user1-128x128.jpg')}}" alt="User Avatar">
 
                             <div class="contacts-list-info">
                               <span class="contacts-list-name">
@@ -1221,7 +1223,7 @@
                         <!-- End Contact Item -->
                         <li>
                           <a href="#">
-                            <img class="contacts-list-img" src="{{ asset ('template/dist/img/user7-128x128.jpg') }}" alt="User Avatar">
+                            <img class="contacts-list-img" src="{{asset('template/dist/img/user7-128x128.jpg')}}" alt="User Avatar">
 
                             <div class="contacts-list-info">
                               <span class="contacts-list-name">
@@ -1236,7 +1238,7 @@
                         <!-- End Contact Item -->
                         <li>
                           <a href="#">
-                            <img class="contacts-list-img" src="{{ asset ('template/dist/img/user3-128x128.jpg') }}" alt="User Avatar">
+                            <img class="contacts-list-img" src="{{asset('template/dist/img/user3-128x128.jpg')}}" alt="User Avatar">
 
                             <div class="contacts-list-info">
                               <span class="contacts-list-name">
@@ -1251,7 +1253,7 @@
                         <!-- End Contact Item -->
                         <li>
                           <a href="#">
-                            <img class="contacts-list-img" src="{{ asset ('template/dist/img/user5-128x128.jpg') }}" alt="User Avatar">
+                            <img class="contacts-list-img" src="{{asset('template/dist/img/user5-128x128.jpg')}}" alt="User Avatar">
 
                             <div class="contacts-list-info">
                               <span class="contacts-list-name">
@@ -1266,7 +1268,7 @@
                         <!-- End Contact Item -->
                         <li>
                           <a href="#">
-                            <img class="contacts-list-img" src="{{ asset ('template/dist/img/user6-128x128.jpg') }}" alt="User Avatar">
+                            <img class="contacts-list-img" src="{{asset('template/dist/img/user6-128x128.jpg')}}" alt="User Avatar">
 
                             <div class="contacts-list-info">
                               <span class="contacts-list-name">
@@ -1281,7 +1283,7 @@
                         <!-- End Contact Item -->
                         <li>
                           <a href="#">
-                            <img class="contacts-list-img" src="{{ asset ('template/dist/img/user8-128x128.jpg') }}" alt="User Avatar">
+                            <img class="contacts-list-img" src="{{asset('template/dist/img/user8-128x128.jpg')}}" alt="User Avatar">
 
                             <div class="contacts-list-info">
                               <span class="contacts-list-name">
@@ -1336,42 +1338,42 @@
                   <div class="card-body p-0">
                     <ul class="users-list clearfix">
                       <li>
-                        <img src="{{ asset ('template/dist/img/user1-128x128.jpg') }}" alt="User Image">
+                        <img src="{{asset('template/dist/img/user1-128x128.jpg')}}" alt="User Image">
                         <a class="users-list-name" href="#">Alexander Pierce</a>
                         <span class="users-list-date">Today</span>
                       </li>
                       <li>
-                        <img src="{{ asset ('template/dist/img/user8-128x128.jpg') }}" alt="User Image">
+                        <img src="{{asset('template/dist/img/user8-128x128.jpg')}}" alt="User Image">
                         <a class="users-list-name" href="#">Norman</a>
                         <span class="users-list-date">Yesterday</span>
                       </li>
                       <li>
-                        <img src="{{ asset ('template/dist/img/user7-128x128.jpg') }}" alt="User Image">
+                        <img src="{{asset('template/dist/img/user7-128x128.jpg')}}" alt="User Image">
                         <a class="users-list-name" href="#">Jane</a>
                         <span class="users-list-date">12 Jan</span>
                       </li>
                       <li>
-                        <img src="{{ asset ('template/dist/img/user6-128x128.jpg') }}" alt="User Image">
+                        <img src="{{asset('template/dist/img/user6-128x128.jpg')}}" alt="User Image">
                         <a class="users-list-name" href="#">John</a>
                         <span class="users-list-date">12 Jan</span>
                       </li>
                       <li>
-                        <img src="{{ asset ('template/dist/img/user2-160x160.jpg') }}" alt="User Image">
+                        <img src="{{asset('template/dist/img/user2-160x160.jpg')}}" alt="User Image">
                         <a class="users-list-name" href="#">Alexander</a>
                         <span class="users-list-date">13 Jan</span>
                       </li>
                       <li>
-                        <img src="{{ asset ('template/dist/img/user5-128x128.jpg') }}" alt="User Image">
+                        <img src="{{asset('template/dist/img/user5-128x128.jpg')}}" alt="User Image">
                         <a class="users-list-name" href="#">Sarah</a>
                         <span class="users-list-date">14 Jan</span>
                       </li>
                       <li>
-                        <img src="{{ asset ('template/dist/img/user4-128x128.jpg') }}" alt="User Image">
+                        <img src="{{asset('template/dist/img/user4-128x128.jpg')}}" alt="User Image">
                         <a class="users-list-name" href="#">Nora</a>
                         <span class="users-list-date">15 Jan</span>
                       </li>
                       <li>
-                        <img src="{{ asset ('template/dist/img/user3-128x128.jpg') }}" alt="User Image">
+                        <img src="{{asset('template/dist/img/user3-128x128.jpg')}}" alt="User Image">
                         <a class="users-list-name" href="#">Nadia</a>
                         <span class="users-list-date">15 Jan</span>
                       </li>
@@ -1418,7 +1420,7 @@
                     </thead>
                     <tbody>
                     <tr>
-                      <td><a href="{{ asset ('template/pages/examples/invoice.html') }}">OR9842</a></td>
+                      <td><a href="pages/examples/invoice.html">OR9842</a></td>
                       <td>Call of Duty IV</td>
                       <td><span class="badge badge-success">Shipped</span></td>
                       <td>
@@ -1426,7 +1428,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td><a href="{{ asset ('template/pages/examples/invoice.html') }}">OR1848</a></td>
+                      <td><a href="pages/examples/invoice.html">OR1848</a></td>
                       <td>Samsung Smart TV</td>
                       <td><span class="badge badge-warning">Pending</span></td>
                       <td>
@@ -1434,7 +1436,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td><a href=""{{ asset ('template/pages/examples/invoice.html') }}">OR7429</a></td>
+                      <td><a href="pages/examples/invoice.html">OR7429</a></td>
                       <td>iPhone 6 Plus</td>
                       <td><span class="badge badge-danger">Delivered</span></td>
                       <td>
@@ -1442,7 +1444,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td><a href=""{{ asset ('template/pages/examples/invoice.html') }}">OR7429</a></td>
+                      <td><a href="pages/examples/invoice.html">OR7429</a></td>
                       <td>Samsung Smart TV</td>
                       <td><span class="badge badge-info">Processing</span></td>
                       <td>
@@ -1450,7 +1452,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td><a href="{{ asset ('template/pages/examples/invoice.html') }}">OR1848</a></td>
+                      <td><a href="pages/examples/invoice.html">OR1848</a></td>
                       <td>Samsung Smart TV</td>
                       <td><span class="badge badge-warning">Pending</span></td>
                       <td>
@@ -1458,7 +1460,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td><a href="{{ asset ('template/pages/examples/invoice.html') }}">OR7429</a></td>
+                      <td><a href="pages/examples/invoice.html">OR7429</a></td>
                       <td>iPhone 6 Plus</td>
                       <td><span class="badge badge-danger">Delivered</span></td>
                       <td>
@@ -1466,7 +1468,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td><a href="{{ asset ('template/pages/examples/invoice.html') }}">OR9842</a></td>
+                      <td><a href="pages/examples/invoice.html">OR9842</a></td>
                       <td>Call of Duty IV</td>
                       <td><span class="badge badge-success">Shipped</span></td>
                       <td>
@@ -1621,7 +1623,7 @@
                 <ul class="products-list product-list-in-card pl-2 pr-2">
                   <li class="item">
                     <div class="product-img">
-                      <img src="{{ asset ('template/dist/img/default-150x150.png') }}" alt="Product Image" class="img-size-50">
+                      <img src="{{ asset('template/dist/img/default-150x150.png')}}" alt="Product Image" class="img-size-50">
                     </div>
                     <div class="product-info">
                       <a href="javascript:void(0)" class="product-title">Samsung TV
@@ -1634,7 +1636,7 @@
                   <!-- /.item -->
                   <li class="item">
                     <div class="product-img">
-                      <img src="{{ asset ('template/dist/img/default-150x150.png') }}" alt="Product Image" class="img-size-50">
+                      <img src="{{ asset('template/dist/img/default-150x150.png')}}" alt="Product Image" class="img-size-50">
                     </div>
                     <div class="product-info">
                       <a href="javascript:void(0)" class="product-title">Bicycle
@@ -1647,7 +1649,7 @@
                   <!-- /.item -->
                   <li class="item">
                     <div class="product-img">
-                      <img src="{{ asset ('template/dist/img/default-150x150.png') }}" alt="Product Image" class="img-size-50">
+                      <img src="{{ asset('template/dist/img/default-150x150.png')}}" alt="Product Image" class="img-size-50">
                     </div>
                     <div class="product-info">
                       <a href="javascript:void(0)" class="product-title">
@@ -1663,7 +1665,7 @@
                   <!-- /.item -->
                   <li class="item">
                     <div class="product-img">
-                      <img src="{{ asset ('template/dist/img/default-150x150.png') }}" alt="Product Image" class="img-size-50">
+                      <img src="{{ asset('template/dist/img/default-150x150.png')}}" alt="Product Image" class="img-size-50">
                     </div>
                     <div class="product-info">
                       <a href="javascript:void(0)" class="product-title">PlayStation 4
@@ -1712,26 +1714,211 @@
 
 <!-- REQUIRED SCRIPTS -->
 <!-- jQuery -->
-<script src="{{ asset ('template/plugins/jquery/jquery.min.js') }}"></script>
+<script src="{{ asset('template/plugins/jquery/jquery.min.js') }}"></script>
 <!-- Bootstrap -->
-<script src="{{ asset ('template/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ asset('template/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 <!-- overlayScrollbars -->
-<script src="{{ asset ('template/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js') }}"></script>
+<script src="{{ asset('template/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js') }}"></script>
 <!-- AdminLTE App -->
-<script src="{{ asset ('template/dist/js/adminlte.js') }}"></script>
+<script src="{{ asset('template/dist/js/adminlte.js') }}"></script>
 
 <!-- PAGE PLUGINS -->
 <!-- jQuery Mapael -->
-<script src="{{ asset ('template/plugins/jquery-mousewheel/jquery.mousewheel.js') }}"></script>
-<script src="{{ asset ('template/plugins/raphael/raphael.min.js') }}"></script>
-<script src="{{ asset ('template/plugins/jquery-mapael/jquery.mapael.min.js') }}"></script>
-<script src="{{ asset ('template/plugins/jquery-mapael/maps/usa_states.min.js') }}"></script>
+<script src="{{ asset('template/plugins/jquery-mousewheel/jquery.mousewheel.js') }}"></script>
+<script src="{{ asset('template/plugins/raphael/raphael.min.js') }}"></script>
+<script src="{{ asset('template/plugins/jquery-mapael/jquery.mapael.min.js') }}"></script>
+<script src="{{ asset('template/plugins/jquery-mapael/maps/usa_states.min.js') }}"></script>
 <!-- ChartJS -->
-<script src="{{ asset ('template/plugins/chart.js/Chart.min.js') }}"></script>
+<script src="{{ asset('template/plugins/chart.js/Chart.min.js') }}"></script>
 
 <!-- AdminLTE for demo purposes -->
-<script src="{{ asset ('template/dist/js/demo.js') }}"></script>
+<script src="{{ asset('template/dist/js/demo.js') }}"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="{{ asset ('template/dist/js/pages/dashboard2.js') }}"></script>
+<script src="{{ asset('template/dist/js/pages/dashboard2.js') }}"></script>
 </body>
-</html>
+</html> --}}
+
+
+{{-- JS 6 Praktikum A Soal 7 dst --}}
+@extends('adminlte::page') 
+ 
+@section('title', 'Dashboard') 
+ 
+@section('content_header') 
+    <h1>Dashboard</h1> 
+@stop 
+ 
+@section('content') 
+ 
+    <div class="card-body"> 
+        <div class="card card-warning">
+            <div class="card-header">
+              <h3 class="card-title">General Elements</h3>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+              <form>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <!-- text input -->
+                    <div class="form-group">
+                      <label>Text</label>
+                      <input type="text" class="form-control" placeholder="Enter ...">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Text Disabled</label>
+                      <input type="text" class="form-control" placeholder="Enter ..." disabled>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <!-- textarea -->
+                    <div class="form-group">
+                      <label>Textarea</label>
+                      <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Textarea Disabled</label>
+                      <textarea class="form-control" rows="3" placeholder="Enter ..." disabled></textarea>
+                    </div>
+                  </div>
+                </div>
+        
+                <!-- input states -->
+                <div class="form-group">
+                  <label class="col-form-label" for="inputSuccess"><i class="fas fa-check"></i> Input with
+                    success</label>
+                  <input type="text" class="form-control is-valid" id="inputSuccess" placeholder="Enter ...">
+                </div>
+                <div class="form-group">
+                  <label class="col-form-label" for="inputWarning"><i class="far fa-bell"></i> Input with
+                    warning</label>
+                  <input type="text" class="form-control is-warning" id="inputWarning" placeholder="Enter ...">
+                </div>
+                <div class="form-group">
+                  <label class="col-form-label" for="inputError"><i class="far fa-times-circle"></i> Input with
+                    error</label>
+                  <input type="text" class="form-control is-invalid" id="inputError" placeholder="Enter ...">
+                </div>
+        
+                <div class="row">
+                  <div class="col-sm-6">
+                    <!-- checkbox -->
+                    <div class="form-group">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">Checkbox</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" checked>
+                        <label class="form-check-label">Checkbox checked</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" disabled>
+                        <label class="form-check-label">Checkbox disabled</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <!-- radio -->
+                    <div class="form-group">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="radio1">
+                        <label class="form-check-label">Radio</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="radio1" checked>
+                        <label class="form-check-label">Radio checked</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" disabled>
+                        <label class="form-check-label">Radio disabled</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="row">
+                  <div class="col-sm-6">
+                    <!-- select -->
+                    <div class="form-group">
+                      <label>Select</label>
+                      <select class="form-control">
+                        <option>option 1</option>
+                        <option>option 2</option>
+                        <option>option 3</option>
+                        <option>option 4</option>
+                        <option>option 5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Select Disabled</label>
+                      <select class="form-control" disabled>
+                        <option>option 1</option>
+                        <option>option 2</option>
+                        <option>option 3</option>
+                        <option>option 4</option>
+                        <option>option 5</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="row">
+                  <div class="col-sm-6">
+                    <!-- Select multiple-->
+                    <div class="form-group">
+                      <label>Select Multiple</label>
+                      <select multiple class="form-control">
+                        <option>option 1</option>
+                        <option>option 2</option>
+                        <option>option 3</option>
+                        <option>option 4</option>
+                        <option>option 5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Select Multiple Disabled</label>
+                      <select multiple class="form-control" disabled>
+                        <option>option 1</option>
+                        <option>option 2</option>
+                        <option>option 3</option>
+                        <option>option 4</option>
+                        <option>option 5</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- /.card-body -->
+          </div>
+        <form> 
+          <div class="row"> 
+            <div class="col-sm-6"> 
+              <!-- text input --> 
+              <div class="form-group"> 
+      <label>Level id</label><input type="text" class="form-control" placeholder="id"> 
+                <div> 
+              </div> 
+              <button type = "submit" class ="btn btn-info">Submit </button> 
+            </div> 
+@stop 
+ 
+@section('css') 
+    {{-- Add here extra stylesheets --}} 
+    {{-- <link rel="stylesheet" href="/css/admin_custom.css"> --}} 
+@stop 
+ 
+@section('js') 
+    <script> console.log("Hi, I'm using the Laravel-AdminLTE package!"); </script> 
+@stop 
