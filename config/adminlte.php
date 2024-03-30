@@ -323,12 +323,12 @@ return [
         ],
         [
             'text' => 'User',
-            'url' => '/user/create',
+            'url' => '/user',
             'icon' => 'far fa-user fa-fw',
         ],
         [
             'text' => 'Level',
-            'url' => '/level/create',
+            'url' => '/level',
             'icon' => 'far fas fa-level-up-alt fa-fw',
         ],
         // [
