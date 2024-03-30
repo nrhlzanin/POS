@@ -8,18 +8,21 @@ use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
-    // public function index() {
+    // public function index() 
+    // {
     //     $user = UserModel::all();
     //     return view('user', ['data' => $user]);
     // }
 
-    public function tambah() {
-        return view('user_tambah');
-    }
     public function index() 
     {
         $user = UserModel::with('level')->get();
-        return view('user', ['data' => $user]);
+        return view('user.index', ['data' => $user]);
+    }
+
+    public function create() 
+    {
+        return view('user.create');
     }
 
     public function tambah_simpan(Request $request)
@@ -36,7 +39,7 @@ class UserController extends Controller
     public function ubah($id)
     {
         $user = UserModel::find($id);
-        return view('user_ubah', ['data' => $user]);
+        return view('user.user_ubah', ['data' => $user]);
     }
 
     public function ubah_simpan($id, Request $request)

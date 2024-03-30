@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Form Ubah Data User<</title>
     </head>
     <body>
         <h1>Form Ubah Data User</h1>
+        <a href="{{ route('/user') }}">Kembali</a>
         <br>
         <form method="post" action="{{ route('/user/ubah_simpan', $data->user_id) }}">
             {{ csrf_field() }}
