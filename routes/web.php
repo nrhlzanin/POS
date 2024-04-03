@@ -5,6 +5,7 @@ use App\Http\Controllers\LevelController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\POSController;
+use App\Http\Controllers\WelcomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -78,3 +79,6 @@ Route::prefix('level')->group(function () {
 
 //Route m_user
 Route::resource('m_user', POSController::class);
+
+//JS 7 praktikum 2
+Route::get('/', [WelcomeController::class, 'index']);

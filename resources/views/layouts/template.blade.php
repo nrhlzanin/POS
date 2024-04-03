@@ -16,7 +16,7 @@
   <!-- Site wrapper -->
   <div class="wrapper">
     <!-- Navbar -->
-    @include('layoutss.header')
+    @include('layouts.header')
     <!-- Navbar -->
 
     <!-- Main Sidebar Container -->
@@ -28,14 +28,14 @@
       </a>
 
       <!-- Sidebar -->
-      @include('layoutss.sidebar')
+      @include('layouts.sidebar')
       <!-- Sidebar -->
     </aside>
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
       <!-- Content Header (Page header) -->
-      @include('layoutss.breadcrumb')
+      @include('layouts.breadcrumb')
 
       <!-- Main content -->
       <section class="content">
@@ -45,7 +45,7 @@
     </div>
     <!-- Content Wrapper. Contains page content -->
 
-    @include('layoutss.footer')
+    @include('layouts.footer')
   </div>
   <!-- Site wrapper -->
 
