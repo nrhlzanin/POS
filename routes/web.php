@@ -40,24 +40,23 @@ Route::prefix('kategori')->group(function () {
     Route::get('/delete/{id}', [KategoriController::class, 'delete'])->name('/kategori/delete');
 });
 
+// //Route User
+// Route::prefix('user')->group(function () {
+//     Route::get('/', [UserController::class, 'index'])->name('/user');
 
-//Route User
-Route::prefix('user')->group(function () {
-    Route::get('/', [UserController::class, 'index'])->name('/user');
+//     //Create User
+//     Route::get('/create', [UserController::class, 'create'])->name('/user/create');
 
-    //Create User
-    Route::get('/create', [UserController::class, 'create'])->name('/user/create');
+//     //Store User
+//     Route::post('/', [UserController::class, 'store'])->name('/user/store');
 
-    //Store User
-    Route::post('/', [UserController::class, 'store'])->name('/user/store');
+//     //Edit User
+//     Route::get('/update/{id}', [UserController::class, 'update'])->name('/user/update');
+//     Route::put('/update_simpan/{id}', [UserController::class, 'update_simpan'])->name('/user/update_simpan');
 
-    //Edit User
-    Route::get('/update/{id}', [UserController::class, 'update'])->name('/user/update');
-    Route::put('/update_simpan/{id}', [UserController::class, 'update_simpan'])->name('/user/update_simpan');
-
-    //Delete User
-    Route::get('/delete/{id}', [UserController::class, 'delete'])->name('/user/delete');
-});
+//     //Delete User
+//     Route::get('/delete/{id}', [UserController::class, 'delete'])->name('/user/delete');
+// });
 
 //Route Level
 Route::prefix('level')->group(function () {
@@ -82,3 +81,15 @@ Route::resource('m_user', POSController::class);
 
 //JS 7 praktikum 2
 Route::get('/', [WelcomeController::class, 'index']);
+
+//JS 7 Praktikum 3
+Route::group(['prefix' => 'user'], function () {
+    Route::get('/', [UserController::class, 'index']); //menampilkan halaman awal user
+    Route::post('/list', [UserController::class, 'list']); //menampilkan data user dalam bentuk json untuk database
+    Route::get('create', [UserController::class, 'create']); //menampilkan halaman form tambah user
+    Route::post('/', [UserController::class, 'store']); //menyimpan data user baru
+    Route::get('/{id}', [UserController::class, 'show']); //menampilkan detail user
+    Route::get('/{id}/edit', [UserController::class, 'edit']); //menampilkan halaman form edit user
+    Route::put('/{id}', [UserController::class, 'update']); //menyimpan perubahan data user
+    Route::delete('/{id}', [UserController::class, 'destroy']); //menghapus data user
+});
