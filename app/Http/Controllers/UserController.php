@@ -8,15 +8,14 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use App\Http\Requests\StorePostRequest;
 use Illuminate\Http\RedirectResponse;
-// use Yajra\DataTables\DataTables;
 use Yajra\DataTables\Facades\DataTables;
 use App\Models\LevelModel;
 
 class UserController extends Controller
 {
-    // Menampilkan halaman awal user
     public function index() 
     {
+        // Menampilkan halaman awal user
         $breadcrumb = (object) [
             'title' => 'Daftar User',
             'list' => ['Home', 'User']
@@ -30,7 +29,7 @@ class UserController extends Controller
 
         $level = LevelModel::all(); //ambil data level untuk filter level
 
-        return view('user.index', ['breadcrumb' => $breadcrumb, 'page' => $page, 'level' => $level,'activeMenu' => $activeMenu]);
+        return view('user.index', ['breadcrumb' => $breadcrumb, 'page' => $page, 'level' => $level, 'activeMenu' => $activeMenu]);
     }
 
     // Ambil data user dalam bentuk json untuk datatables
@@ -171,7 +170,7 @@ class UserController extends Controller
             return redirect('/user')->with('success', 'Data user berhasil dihapus');
         } catch (\Illuminate\Database\QueryException $e) {
             //jika terjadi error ketika menghapus data, redirect kembali ke halaman user dengan membawa pesan error
-            return redirect('/user')->with('error', 'Data user gagal dihapus karena masih terdapat tabel lain yang terkait dengan data ini');
+            return redirect('/user')->with('error', 'Data user gagal dihapus karena masih terdapat tabel lain yang terkait dengan data ini' . $e->getMessage());
         }
     }
 }
